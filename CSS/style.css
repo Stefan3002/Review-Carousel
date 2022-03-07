@@ -1,0 +1,78 @@
+h1 {
+  font-family: "Sansita Swashed", cursive;
+}
+
+body {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+
+.content {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.active {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+.active h2, .active h3, .active p {
+  font-size: 1.4rem !important;
+  transition: font-size 0.5s ease-out;
+}
+
+.inactive {
+  opacity: 0.2;
+  transition: opacity 0.5s ease-out;
+}
+.inactive h2, .inactive h3, .inactive p {
+  font-size: 0.8rem !important;
+  transition: font-size 0.5s ease-out;
+}
+
+@keyframes SlideLeft {
+  from {
+    transform: translateX(500%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes SlideLeft2 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-500%);
+  }
+}
+.item {
+  height: 100%;
+  margin: 1.2rem;
+  box-shadow: 2px 5px 10px black;
+  padding: 1rem;
+  background: lightcyan;
+  border-radius: 10px;
+  width: 20%;
+}
+.item h2 {
+  font-size: 2.5rem;
+}
+.item h3 {
+  font-size: 2rem;
+}
+.item p {
+  font-size: 1rem;
+}
+.item img {
+  width: 25%;
+}
+
+.fa {
+  margin: 0.5rem 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
